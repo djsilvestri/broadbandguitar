@@ -1,0 +1,26 @@
+<IfModule mod_rewrite.c>
+  <IfModule mod_negotiation.c>
+  </IfModule>
+
+  RewriteEngine On
+      # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization}
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+      
+      # Redirect trailing slashes if not a folder
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+      # replace non-existing files with index.html
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_URI} ^//(.+)$
+    RewriteRule ^web web/index.php [L]
+
+      # Handle the front controller
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+
+    </IfModule>
