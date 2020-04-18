@@ -1,8 +1,8 @@
 
 
-/*	
- * This file runs in a Node context (it's NOT transpiled by Babel), so use only	
- * the ES6 features that are supported by your Node version. https://node.green/	
+/*
+ * This file runs in a Node context (it's NOT transpiled by Babel), so use only
+ * the ES6 features that are supported by your Node version. https://node.green/
  */
 
 // Configuration for your app
@@ -26,7 +26,7 @@ module.exports = function (/* ctx */) {
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
       // 'ionicons-v4',
-      // 'mdi-v4',
+      // 'mdi-v5',
       // 'fontawesome-v5',
       // 'eva-icons',
       // 'themify',
@@ -60,7 +60,7 @@ module.exports = function (/* ctx */) {
 
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ie
     supportIE: false,
-    
+
     // https://quasar.dev/quasar-cli/cli-documentation/supporting-ts
     supportTS: false,
 
@@ -106,7 +106,7 @@ module.exports = function (/* ctx */) {
         name: 'Quasar App',
         
         short_name: 'Quasar App',
-        description: 'A Quasar Framework app',
+        description: 'Laratube',
         display: 'standalone',
         orientation: 'portrait',
         
@@ -174,7 +174,7 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'quasarproject'
+        appId: 'quasarapp'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration

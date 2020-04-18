@@ -1,7 +1,7 @@
 {
-  "name": "quasarproject",
+  "name": "quasarapp",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
+  "description": "Laratube",
   "productName": "Quasar App",
   "cordovaId": "org.cordova.quasar.app",
   "capacitorId": "",

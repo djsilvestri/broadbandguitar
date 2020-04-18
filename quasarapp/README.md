@@ -1,6 +1,6 @@
-# Quasar App (quasarproject)
+# Quasar App (quasarapp)
 
-A Quasar Framework app
+Laratube
 
 ## Install the dependencies
 ```bash
